@@ -8,92 +8,107 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
+<!-- ============ FLOATING PILL HEADER ============ -->
 <header class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#top" class="brand">
-      <span class="brand-mark">🔧</span>
-      <span class="brand-text">TEKNİK <strong>ADAM</strong></span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#hizmetler">Hizmetler</a>
-      <a href="#neden">Neden Biz</a>
-      <a href="#instagram">Instagram</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
-    <a class="btn btn-accent btn-sm nav-cta" href="https://wa.me/905536791437" target="_blank" rel="noopener">WhatsApp</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
-  </div>
+  <a href="#top" class="brand">
+    <span class="brand-mark">🔧</span>
+    <span class="brand-text">TEKNİK <em>ADAM</em></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#neden">Neden Biz</a>
+    <a href="#instagram">Instagram</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="btn btn-accent btn-sm nav-cta" href="https://wa.me/905536791437" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.2.4-.3.5-.1.2-.3.4-.4.5-.1.2-.3.4-.1.7.1.3.7 1.1 1.5 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1.2-.2.6-.7.8-.9.2-.3.4-.2.6-.1.3.1 1.6.8 1.9.9.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg>
+    WhatsApp
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="grid-overlay"></span>
+  </div>
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Kombi · Beyaz Eşya · Elektronik</span>
-      <h1>Cihazınız <span class="hl">aynı gün</span> yeniden çalışır.</h1>
-      <p class="lead">Gaziosmanpaşa ve çevresinde kombi, beyaz eşya ve elektronik tamirde güvenilir, garantili teknik servis.</p>
+      <span class="pre-head">— Gaziosmanpaşa, İstanbul</span>
+      <h1>
+        <span class="line"><span class="w">Cihazınız</span></span>
+        <span class="line"><span class="w accent">aynı gün</span> <span class="w">yeniden çalışır.</span></span>
+      </h1>
+      <p class="lead">Kombi, beyaz eşya ve elektronik tamirde güvenilir, garantili teknik servis. Usta eli, dürüst fiyat.</p>
       <div class="hero-actions">
         <a class="btn btn-accent" href="https://wa.me/905536791437" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
         <a class="btn btn-ghost" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">Instagram'da Takip Et</a>
       </div>
       <div class="hero-trust">
-        <span>✓ Garantili işçilik</span>
-        <span>✓ Aynı gün servis</span>
-        <span>✓ Şeffaf fiyat</span>
+        <span><i>✓</i> Garantili işçilik</span>
+        <span><i>✓</i> Aynı gün servis</span>
+        <span><i>✓</i> Şeffaf fiyat</span>
       </div>
     </div>
-    <div class="hero-media">
-      <img src="images/hero.jpg" alt="Teknik Adam kombi tamiri" width="1408" height="768" loading="eager">
+    <div class="hero-media reveal-up">
+      <div class="hero-frame">
+        <img src="images/hero.jpg" alt="Teknik Adam kombi tamiri" width="1408" height="768" loading="eager">
+      </div>
       <div class="hero-badge">
-        <strong>31.000+</strong>
-        <span>Instagram takipçisi</span>
+        <span class="pulse"></span>
+        <div><strong>31.000+</strong><small>Instagram takipçisi</small></div>
       </div>
+      <div class="hero-float">🔧 Aynı gün servis</div>
     </div>
   </div>
 </section>
 
-<!-- ============ STATS ============ -->
-<section class="stats">
-  <div class="container stats-grid">
-    <div class="stat"><strong>31.000+</strong><span>Instagram takipçisi</span></div>
-    <div class="stat"><strong>Aynı gün</strong><span>Servis müdahalesi</span></div>
-    <div class="stat"><strong>Garanti</strong><span>Tamirde işçilik garantisi</span></div>
-    <div class="stat"><strong>3 alan</strong><span>Kombi · Beyaz eşya · Elektronik</span></div>
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Kombi Servisi ✦ Beyaz Eşya ✦ Elektronik Tamir ✦ Aynı Gün Müdahale ✦ Garantili İşçilik ✦ Orijinal Parça ✦</span>
+    <span>Kombi Servisi ✦ Beyaz Eşya ✦ Elektronik Tamir ✦ Aynı Gün Müdahale ✦ Garantili İşçilik ✦ Orijinal Parça ✦</span>
   </div>
-</section>
+</div>
 
-<!-- ============ HİZMETLER ============ -->
+<!-- ============ HİZMETLER (BENTO) ============ -->
 <section class="section" id="hizmetler">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow dark">Hizmetlerimiz</span>
+      <span class="pre-head center">— Hizmetlerimiz</span>
       <h2>Ne tamir ediyoruz?</h2>
       <p>Evinizdeki ve iş yerinizdeki cihazları çalışır duruma getiriyoruz.</p>
     </div>
-    <div class="cards">
-      <article class="card">
+    <div class="bento">
+      <article class="bento-card bento-lg reveal-up">
         <img src="images/kombi.jpg" alt="Kombi servisi" loading="lazy">
-        <div class="card-body">
+        <div class="bento-body">
+          <span class="bento-tag">En çok aranan</span>
           <h3>Kombi Servisi</h3>
-          <p>Kombi bakım, onarım ve montaj. Isınma ve sıcak su sorunlarına hızlı çözüm.</p>
+          <p>Kombi bakım, onarım ve montaj. Isınma ve sıcak su sorunlarına hızlı, kalıcı çözüm.</p>
+          <a class="text-link" href="https://wa.me/905536791437" target="_blank" rel="noopener">Randevu al →</a>
         </div>
       </article>
-      <article class="card">
+      <article class="bento-card reveal-up">
         <img src="images/beyaz.jpg" alt="Beyaz eşya tamiri" loading="lazy">
-        <div class="card-body">
+        <div class="bento-body">
           <h3>Beyaz Eşya</h3>
-          <p>Çamaşır makinesi, bulaşık makinesi ve buzdolabı tamiri ile periyodik bakım.</p>
+          <p>Çamaşır, bulaşık makinesi ve buzdolabı tamiri ile periyodik bakım.</p>
         </div>
       </article>
-      <article class="card">
+      <article class="bento-card reveal-up">
         <img src="images/elektronik.jpg" alt="Elektronik tamir" loading="lazy">
-        <div class="card-body">
+        <div class="bento-body">
           <h3>Elektronik &amp; Mekanik</h3>
           <p>Elektronik kart tamiri ve mekanik onarım. Arıza tespiti ve hassas müdahale.</p>
         </div>
@@ -102,71 +117,110 @@
   </div>
 </section>
 
-<!-- ============ NEDEN ============ -->
-<section class="section section-dark" id="neden">
+<!-- ============ STATS (SAYAÇ) ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal-up">
+      <strong><span class="count" data-target="31000">0</span>+</strong>
+      <span>Instagram takipçisi</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong><span class="count" data-target="3">0</span></strong>
+      <span>Uzmanlık alanı</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong><span class="count" data-target="7">0</span>/24</strong>
+      <span>Ulaşılabilir servis</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong>%<span class="count" data-target="100">0</span></strong>
+      <span>Garantili işçilik</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEDEN BİZ ============ -->
+<section class="section" id="neden">
   <div class="container neden-grid">
-    <div class="neden-copy">
-      <span class="eyebrow">Neden Teknik Adam?</span>
-      <h2>İşi ustasına bırakın.</h2>
+    <div class="neden-copy reveal-up">
+      <span class="pre-head">— Neden Teknik Adam?</span>
+      <h2>İşi ustasına<br>bırakın.</h2>
       <p>Yılların tecrübesi, dürüst fiyat ve işini sağlam yapan bir usta. Instagram'da 31.000'den fazla kişinin takip ettiği güvenilir bir isim.</p>
       <a class="btn btn-accent" href="#iletisim">Hemen Ulaşın</a>
     </div>
-    <ul class="neden-list">
-      <li><span class="tick">✓</span><div><strong>Aynı gün müdahale</strong><p>Arızaya hızlı dönüş, bekletmeyen servis.</p></div></li>
-      <li><span class="tick">✓</span><div><strong>Garantili işçilik</strong><p>Yapılan tamirde güven, işin arkasında duruyoruz.</p></div></li>
-      <li><span class="tick">✓</span><div><strong>Şeffaf fiyatlandırma</strong><p>İşe başlamadan net fiyat, sürpriz maliyet yok.</p></div></li>
-      <li><span class="tick">✓</span><div><strong>Orijinal parça</strong><p>Uzun ömürlü çözüm için kaliteli yedek parça.</p></div></li>
-    </ul>
+    <div class="neden-list">
+      <div class="glass-card reveal-up">
+        <span class="g-ico">⚡</span>
+        <div><strong>Aynı gün müdahale</strong><p>Arızaya hızlı dönüş, bekletmeyen servis.</p></div>
+      </div>
+      <div class="glass-card reveal-up">
+        <span class="g-ico">🛡️</span>
+        <div><strong>Garantili işçilik</strong><p>Yapılan tamirde güven, işin arkasında duruyoruz.</p></div>
+      </div>
+      <div class="glass-card reveal-up">
+        <span class="g-ico">💰</span>
+        <div><strong>Şeffaf fiyatlandırma</strong><p>İşe başlamadan net fiyat, sürpriz maliyet yok.</p></div>
+      </div>
+      <div class="glass-card reveal-up">
+        <span class="g-ico">🔩</span>
+        <div><strong>Orijinal parça</strong><p>Uzun ömürlü çözüm için kaliteli yedek parça.</p></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ INSTAGRAM ============ -->
-<section class="section" id="instagram">
+<section class="section ig-section" id="instagram">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow dark">Sosyal Medya</span>
+      <span class="pre-head center">— Sosyal Medya</span>
       <h2>Instagram'da Takip Edin</h2>
       <p>Günlük tamir videoları, ipuçları ve işin arkasından hikayeler.</p>
     </div>
-    <div class="ig-grid">
-      <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
-        <img src="images/hero.jpg" alt="Teknik Adam Instagram gönderisi" loading="lazy">
-        <span class="ig-overlay">❤ 409</span>
-      </a>
-      <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
-        <img src="images/kombi.jpg" alt="Kombi tamiri videosu" loading="lazy">
-        <span class="ig-overlay">▶ 417</span>
-      </a>
-      <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
-        <img src="images/beyaz.jpg" alt="Beyaz eşya tamiri videosu" loading="lazy">
-        <span class="ig-overlay">▶ 368</span>
-      </a>
-      <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
-        <img src="images/elektronik.jpg" alt="Elektronik tamir videosu" loading="lazy">
-        <span class="ig-overlay">▶ 402</span>
-      </a>
-    </div>
-    <div class="ig-cta">
-      <a class="btn btn-dark" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
-        <span class="ig-ico">📷</span> @teknik_adam37 — Takip Et
-      </a>
+    <div class="ig-wrap reveal-up">
+      <div class="ig-profile">
+        <div class="ig-avatar">🔧</div>
+        <div>
+          <strong>@teknik_adam37</strong>
+          <span>31.000+ takipçi · Günlük içerik</span>
+        </div>
+        <a class="btn btn-ig" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">Takip Et</a>
+      </div>
+      <div class="ig-grid">
+        <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
+          <img src="images/hero.jpg" alt="Teknik Adam gönderisi" loading="lazy"><span>❤ 409</span>
+        </a>
+        <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
+          <img src="images/kombi.jpg" alt="Kombi tamiri" loading="lazy"><span>▶ 417</span>
+        </a>
+        <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
+          <img src="images/beyaz.jpg" alt="Beyaz eşya tamiri" loading="lazy"><span>▶ 368</span>
+        </a>
+        <a class="ig-item" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">
+          <img src="images/elektronik.jpg" alt="Elektronik tamir" loading="lazy"><span>▶ 402</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ İLETİŞİM ============ -->
-<section class="section section-cta" id="iletisim">
-  <div class="container cta-box">
-    <h2>Bir arızanız mı var?</h2>
-    <p>Hemen yazın, aynı gün gelelim.</p>
-    <div class="cta-actions">
-      <a class="btn btn-accent btn-lg" href="https://wa.me/905536791437" target="_blank" rel="noopener">💬 WhatsApp'tan Yazın</a>
-      <a class="btn btn-ghost btn-lg" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">📷 Instagram DM</a>
-    </div>
-    <div class="cta-info">
-      <span>📍 Gaziosmanpaşa, İstanbul</span>
-      <span>📞 +90 553 679 14 37</span>
-      <span>🕐 Haftanın her günü</span>
+<!-- ============ CTA ============ -->
+<section class="section" id="iletisim">
+  <div class="container">
+    <div class="cta-box reveal-up">
+      <span class="cta-glow"></span>
+      <span class="pre-head center light">— İletişim</span>
+      <h2>Bir arızanız mı var?</h2>
+      <p>Hemen yazın, aynı gün gelelim.</p>
+      <div class="cta-actions">
+        <a class="btn btn-accent btn-lg" href="https://wa.me/905536791437" target="_blank" rel="noopener">💬 WhatsApp'tan Yazın</a>
+        <a class="btn btn-ghost btn-lg" href="https://instagram.com/teknik_adam37" target="_blank" rel="noopener">📷 Instagram DM</a>
+      </div>
+      <div class="cta-info">
+        <span>📍 Gaziosmanpaşa, İstanbul</span>
+        <span>📞 +90 553 679 14 37</span>
+        <span>🕐 Haftanın her günü</span>
+      </div>
     </div>
   </div>
 </section>
@@ -174,9 +228,9 @@
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container footer-inner">
-    <a href="#top" class="brand brand-light">
+    <a href="#top" class="brand">
       <span class="brand-mark">🔧</span>
-      <span class="brand-text">TEKNİK <strong>ADAM</strong></span>
+      <span class="brand-text">TEKNİK <em>ADAM</em></span>
     </a>
     <p class="footer-tag">Kombi · Beyaz Eşya · Elektronik Tamir — Gaziosmanpaşa, İstanbul</p>
     <div class="footer-links">
